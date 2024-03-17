@@ -7,8 +7,8 @@
 
 .container {
     width: 100%;
-    min-height: 100vh;
-    background-image: linear-gradient(rgba(139, 69, 19, 0.65),rgba(210, 180, 140, 0.65)), url(background.png);
+    min-height: 200vh;
+    background-image: linear-gradient(rgba(139, 69, 19, 0.65),rgba(210, 180, 140, 0.65)), url(images/background.png);
     background-size: 100%;
     background-position: center;
     padding: 10px 8%;
@@ -61,6 +61,60 @@ nav ul li a {
 
 .btn img {
     width: 40px;
+}
 
-    
+.content {
+    margin-top: 14%;
+    color: #fff;
+    max-width: 1000px;
+}
+
+.content h1 {
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 85px;
+    margin-bottom: 25px; 
+}
+
+.content form {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.content form input {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.content form .btn{
+    font-size: 15px;
+    padding: 10px 30px;
+}
+
+.dialect-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    width: 20%;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 0 0 10px 10px; /* Adjust the bottom radius as needed */
+    background: #fff;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.dialect {
+    margin: 20px;
+}
+
+.dialect-img {
+    width:10%;
 }
