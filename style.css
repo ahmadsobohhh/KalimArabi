@@ -9,12 +9,20 @@
 .container {
     width: 100%;
     min-height: 200vh;
-    background-image: linear-gradient(rgba(139, 69, 19, 0.65), rgba(210, 180, 140, 0.65)),
-                      url(images/background.png),
-                      url(images/background2.png);
-    background-size: 100%, auto, auto; /* Set sizes for each background image */
-    background-position: center, center, center; /* Set positions for each background image */
-    background-repeat: repeat, no-repeat, no-repeat; /* Set repeat behavior if needed */
+    background-image: url(images/background.png);
+    background-size: 100%, auto; /* Set sizes for each background image */
+    background-position: center, center; /* Set positions for each background image */
+    background-repeat: repeat, no-repeat; /* Set repeat behavior if needed */
+    padding: 10px 8%;
+}
+
+.container2 {
+    width: 100%;
+    min-height: 200vh;
+    background-image: url(images/background2.png);
+    background-size: auto; /* Set sizes for each background image */
+    background-position: center; /* Set positions for each background image */
+    background-repeat: no-repeat; /* Set repeat behavior if needed */
     padding: 10px 8%;
 }
 
@@ -75,7 +83,7 @@ nav ul li a {
 }
 
 .content h1 {
-    font-size: 70px;
+    font-size: 65px;
     font-weight: 600;
     line-height: 85px;
     margin-bottom: 25px; 
@@ -107,18 +115,26 @@ nav ul li a {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     width: 20%;
-    padding: 10px 20px;
-    border: 1px solid #fff;
-    border-radius: 0 0 10px 10px; /* Adjust the bottom radius as needed */
-    background: #fff;
+    background-color: #fff;
     color: #000;
     font-weight: 500;
     cursor: pointer;
 }
 
-.dialect {
+.dialect-cards .dialect {
     margin: 20px;
+    background-color: white;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    padding: 5px;
 }
+
+.dialect-cards .dialect:hover {
+    background-color: lightgray;
+    border-color: lightgrey; 
+}
+
 
 .dialect-img {
     width:10%;
