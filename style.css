@@ -4,6 +4,7 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 
 .container {
@@ -45,7 +46,6 @@ nav ul li {
 nav ul li a {
     color: white;
     background: #000;
-    text-decoration: none;
     padding: 10px 10px;
     border: 0;
     outline: 0;
@@ -102,15 +102,25 @@ nav ul li a:hover {
 
 .dialect {
     background-color: black;
+    margin-left: 35px;
     border-radius: 15px;
     cursor: pointer;
-    padding: 5px;
+    padding: 30px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     transition: background-color 0.3s ease, color 0.3s ease; /* Transition effect */
-
+    flex-direction:column; /* Ensure the elements are displayed in a row */
 }
+
+.dialect-name {
+    color: white;
+}
+
+.dialect-img img {
+    width: 100px; /* Adjust the width to your preference */
+    height: auto; /* Maintain aspect ratio */
+}
+
 
 .dialect-cards {
     margin: 40px;
@@ -118,16 +128,6 @@ nav ul li a:hover {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the minmax for your card size */
     gap: 20px; /* Space between cards */
     color: #000;
-}
-
-.dialect-name {
-    color: white;
-    margin: 10px 0;
-}
-
-.dialect-img img {
-    width: 50%;
-    border-radius: 15px;
 }
 
 .dialect:hover {
