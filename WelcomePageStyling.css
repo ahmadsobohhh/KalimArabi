@@ -45,6 +45,7 @@ nav ul li {
 
 nav ul li a {
     color: white;
+    text-decoration: none; /* Remove underline */
     background: #000;
     padding: 10px 10px;
     border: 0;
@@ -52,7 +53,6 @@ nav ul li a {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    /* Transition effect */
 }
 
 nav ul li a:hover {
@@ -68,11 +68,14 @@ nav ul li a:hover {
     outline: 0;
     border-radius: 5px;
     background: #000;
-    color: #fff;
+    color: #fff; /* Set text color to white */
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
     /* Transition effect */
+}
+.btn a {
+    color: white;
 }
 
 .btn:hover {
