@@ -51,11 +51,13 @@ nav ul li a {
     outline: 0;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effect */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transition effect */
 }
 
 nav ul li a:hover {
-    background-color: rgb(63, 63, 63); /* New background color on hover */
+    background-color: rgb(63, 63, 63);
+    /* New background color on hover */
 }
 
 .btn {
@@ -69,11 +71,13 @@ nav ul li a:hover {
     color: #fff;
     font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effect */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transition effect */
 }
 
 .btn:hover {
-    background-color: rgb(63, 63, 63); /* New background color on hover */
+    background-color: rgb(63, 63, 63);
+    /* New background color on hover */
 }
 
 .btn img {
@@ -108,8 +112,10 @@ nav ul li a:hover {
     padding: 30px;
     display: flex;
     align-items: center;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effect */
-    flex-direction:column; /* Ensure the elements are displayed in a row */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transition effect */
+    flex-direction: column;
+    /* Ensure the elements are displayed in a row */
 }
 
 .dialect-name {
@@ -117,20 +123,26 @@ nav ul li a:hover {
 }
 
 .dialect-img img {
-    width: 100px; /* Adjust the width to your preference */
-    height: auto; /* Maintain aspect ratio */
+    width: 100px;
+    /* Adjust the width to your preference */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 
 .dialect-cards {
     margin: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the minmax for your card size */
-    gap: 20px; /* Space between cards */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Adjust the minmax for your card size */
+    gap: 20px;
+    /* Space between cards */
     color: #000;
 }
 
 .dialect:hover {
-    background-color: rgb(63, 63, 63); /* New background color on hover */
-    color: black; /* New text color on hover */
+    background-color: rgb(63, 63, 63);
+    /* New background color on hover */
+    color: black;
+    /* New text color on hover */
 }

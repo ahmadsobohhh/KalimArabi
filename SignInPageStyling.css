@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    min-height: 200vh;
+    padding: 10px 8%;
+    background-repeat: no-repeat;
+    background-image: url(images/background2.png);
+    background-size: cover;
+    /* Each image covers half of the container horizontally */
+}
+
+
+.form {
+    position: relataive;
+    z-index: 1;
+    background-color: rgba(235, 232, 232, 0.99);
+    max-width: 500px;
+    margin: 200px auto 100px;
+    padding: 45px 45px 30px 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+}
+
+.form p {
+    font-size: 25px;
+    padding: 1px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.form input {
+    outline: 0;
+    border-radius: 10px;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: background-color 0.8s ease;
+    /* Transition background color */
+}
+
+.form input:hover {
+    background-color: #c3e6fa;
+    transition: all 0.8s ease 0s;
+}
+
+.form input:focus {
+    background-color: #c3e6fa;
+    transition: all 0.8s ease 0s;
+}
+
+.form button {
+    text-transform: uppercase;
+    outline: 0;
+    border-radius: 10px;
+    background: black;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.8s ease;
+    /* Transition background color */
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background-color: #363131;
+    transition: all 1s ease 0s;
+}
+
+.form .message {
+    margin: 15px 0 0;
+    color: #000;
+    font-size: 14px;
+}
+
+.form .message a {
+    color: #1e7fce;
+    text-decoration: none;
+}
+
+.content {
+    margin-top: 7%;
+    color: rgb(255, 255, 255);
+    max-width: 1000px;
+}
+
+.content h1 {
+    font-size: 40px;
+}
+
+.logo {
+    width: 400px;
+    cursor: pointer;
+}
