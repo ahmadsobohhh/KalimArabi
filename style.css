@@ -10,27 +10,16 @@
     width: 100%;
     min-height: 200vh;
     background-image: url(images/background.png);
-    background-size: 100%, auto; /* Set sizes for each background image */
-    background-position: center, center; /* Set positions for each background image */
-    background-repeat: repeat, no-repeat; /* Set repeat behavior if needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
     padding: 10px 8%;
 }
-
-.container2 {
-    width: 100%;
-    min-height: 200vh;
-    background-image: url(images/background2.png);
-    background-size: auto; /* Set sizes for each background image */
-    background-position: center; /* Set positions for each background image */
-    background-repeat: no-repeat; /* Set repeat behavior if needed */
-    padding: 10px 8%;
-}
-
 
 .logo {
     width: 350px;
     cursor: pointer;
- }
+}
 
 nav {
     width: 100%;
@@ -55,8 +44,18 @@ nav ul li {
 
 nav ul li a {
     color: white;
+    background: #000;
     text-decoration: none;
+    padding: 10px 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effect */
+}
 
+nav ul li a:hover {
+    background-color: rgb(63, 63, 63); /* New background color on hover */
 }
 
 .btn {
@@ -70,6 +69,11 @@ nav ul li a {
     color: #fff;
     font-weight: 500;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effect */
+}
+
+.btn:hover {
+    background-color: rgb(63, 63, 63); /* New background color on hover */
 }
 
 .btn img {
@@ -78,7 +82,7 @@ nav ul li a {
 
 .content {
     margin-top: 14%;
-    color: #fff;
+    color: rgb(255, 255, 255);
     max-width: 1000px;
 }
 
@@ -86,56 +90,48 @@ nav ul li a {
     font-size: 65px;
     font-weight: 600;
     line-height: 85px;
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
 }
 
-.content form {
-    display: flex;
-    align-items: center;
-    background: #fff;
-    border-radius: 5px;
+.content p {
+    background-color: black;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+.dialect {
+    background-color: black;
+    border-radius: 15px;
+    cursor: pointer;
     padding: 10px;
-    margin-top: 30px;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effect */
 
-.content form input {
-    border: 0;
-    outline: 0;
-    width: 100%;
-    font-size: 16px;
-    padding-left: 10px;
-}
-
-.content form .btn{
-    font-size: 15px;
-    padding: 10px 30px;
 }
 
 .dialect-cards {
+    margin: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    width: 20%;
-    background-color: #fff;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the minmax for your card size */
+    gap: 20px; /* Space between cards */
     color: #000;
-    font-weight: 500;
-    cursor: pointer;
 }
 
-.dialect-cards .dialect {
-    margin: 20px;
-    background-color: white;
-    border: 2px solid transparent;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-    cursor: pointer;
-    padding: 5px;
+.dialect-name {
+    color: white;
+    margin: 10px 0;
 }
 
-.dialect-cards .dialect:hover {
-    background-color: lightgray;
-    border-color: lightgrey; 
+.dialect-img img {
+    width: 100%;
+    height: auto; /* Adjust based on your preference */
+    border-radius: 15px;
 }
 
-
-.dialect-img {
-    width:10%;
+.dialect:hover {
+    background-color: rgb(63, 63, 63); /* New background color on hover */
+    color: black; /* New text color on hover */
 }
