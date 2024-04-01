@@ -45,8 +45,8 @@ nav ul li {
 
 nav ul li a {
     color: white;
-    text-decoration: none; /* Remove underline */
-    background: #000;
+    text-decoration: none; 
+    background: rgba(0,0,0,0.3);
     padding: 10px 10px;
     border: 0;
     outline: 0;
@@ -56,7 +56,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(0, 0, 0);
     /* New background color on hover */
 }
 
@@ -67,7 +67,7 @@ nav ul li a:hover {
     border: 0;
     outline: 0;
     border-radius: 5px;
-    background: #000;
+    background: rgba(0,0,0,0.3);
     color: #fff; /* Set text color to white */
     font-weight: 500;
     cursor: pointer;
@@ -79,7 +79,7 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(0, 0, 0);
     /* New background color on hover */
 }
 
@@ -108,7 +108,7 @@ nav ul li a:hover {
 
 
 .dialect {
-    background-color: black;
+    background-color: rgba(0,0,0,0.3);
     margin-left: 35px;
     border-radius: 15px;
     cursor: pointer;
@@ -132,7 +132,6 @@ nav ul li a:hover {
     /* Maintain aspect ratio */
 }
 
-
 .dialect-cards {
     margin: 40px;
     display: grid;
@@ -144,7 +143,7 @@ nav ul li a:hover {
 }
 
 .dialect:hover {
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(0, 0, 0);
     /* New background color on hover */
     color: black;
     /* New text color on hover */
